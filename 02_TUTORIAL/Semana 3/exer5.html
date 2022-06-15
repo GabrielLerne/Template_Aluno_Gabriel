@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Quantidade de alunos<input type="number" name="quantalunos" id="quantalunos"></p>
+    <p><input type="button" value="verificar" onclick="verificar()"></p>
+
+    <div>
+        <!-- <p>Nota1prova: <input type="number" name="nota1" id="nota1"></p>
+        <p>Nota1trabalho: <input type="number" name="nota1" id="nota1"></p> -->
+        <input type="button" value="calcular" onclick="calcular()">
+    </div>
+    <script>
+        function verificar() {
+            var quant = document.getElementById('quantalunos').value
+            for (var i = 0; i < quantalunos; i++) {
+                var notaprova = document.createElement('input')
+                notaprova.setAttribute("id", "prova")
+                notaprova.setAttribute("type", "number")
+                
+
+            }
+        }
+    </script>
+</body>
+</html>

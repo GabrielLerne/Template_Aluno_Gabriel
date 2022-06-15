@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exer4</title>
+</head>
+<body>
+    <p>quantidade de pessoas</p>
+    <input type="number" name="num" id="num">
+    <p>voo</p>
+    noturno<input type="radio" name="nume" id="noturno">
+    diurno<input type="radio" name="nume" id="diurn">
+
+    <div>
+        <input type="button" value="Verificar" onclick="verpreco()">
+    </div>
+    <p id="eu">
+        oi
+    </p>
+    <script>
+        var fdias = document.getElementsByName('nume')
+        var quant = document.getElementById('num')
+        var res = document.getElementById('eu')
+        function verpreco() {
+            if (fidas[0].checked && Number(quant) >= 50) {
+                res.innerHTML = "80 reais"
+            } else if (fidas[1].checked && Number(quant) >= 50) {
+                res.innerHTML = "120 reais"
+            } else if (fidas[0].checked && Number(quant) < 50) {
+                res.innerHTML = "100 reais"
+            } else {
+                res.innerHTML = "200 reais"
+            }
+        }
+    </script>
+</body>
+</html>
